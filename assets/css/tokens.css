@@ -1,0 +1,99 @@
+/* BotFrame Studio — токены дизайн-системы (день 2, 08.11.2026)
+   Источник: brand-guidelines.md §3–§6 (направление A + тёмный модуль из B).
+   Правило: в компонентах и страницах — только var(--…), никаких сырых цветов и размеров.
+   Брейкпоинты (в медиа-запросах site.css): 480 · 768 · 1024 · 1280 px. */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=JetBrains+Mono:wght@500&display=swap');
+
+:root {
+  /* — Палитра бренда (§3) — */
+  --yellow: #FACC15;
+  --yellow-dark: #EAB308;
+  --yellow-light: #FEF9C3;
+  --ink: #0F172A;
+  --slate: #475569;
+  --slate-light: #CBD5E1;
+  --warm-white: #FFFDF7;
+  --line-color: #E2E8F0;
+  --success: #16A34A;        /* только заливки без текста */
+  --success-text-bg: #15803D; /* фон под белым текстом (бейдж «записано ✅», контраст 5,0) */
+  --telegram: #2AABEE;        /* только декоративные заливки */
+  --telegram-text-bg: #1778AE; /* шапка чата под белым текстом (контраст 4,85) */
+  --chat-in: #F1F5F9;
+  --white: #FFFFFF;
+
+  /* — Семантические (светлая база; .theme-dark переопределяет) — */
+  --bg: var(--warm-white);
+  --bg-card: var(--white);
+  --bg-soft: var(--yellow-light);
+  --fg: var(--ink);
+  --muted: var(--slate);
+  --line: var(--line-color);
+  --accent: var(--yellow);
+  --accent-hover: var(--yellow-dark);
+  --on-accent: var(--ink);
+  --focus: var(--ink);
+  --dark-bg: var(--ink);
+  --dark-fg: var(--white);
+  --dark-muted: var(--slate-light);
+  --dark-card: rgba(255, 255, 255, .06);
+  --dark-card-line: rgba(255, 255, 255, .14);
+
+  /* — Шрифты (§5) — */
+  --font-sans: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  --fs-h1: clamp(2.125rem, 1.4rem + 3.6vw, 4rem);        /* 34 → 64 */
+  --fs-h2: clamp(1.75rem, 1.3rem + 2.2vw, 2.875rem);     /* 28 → 46 */
+  --fs-h3: clamp(1.25rem, 1.1rem + .8vw, 1.75rem);       /* 20 → 28 */
+  --fs-lead: clamp(1.125rem, 1.05rem + .4vw, 1.375rem);  /* 18 → 22 */
+  --fs-body: 1.125rem;                                   /* 18 */
+  --fs-small: .9375rem;                                  /* 15 */
+  --fs-label: .8125rem;                                  /* 13, капс */
+  --fs-num: clamp(2rem, 1.5rem + 2.4vw, 3.25rem);        /* 32 → 52, JetBrains Mono */
+  --lh-tight: 1.05;
+  --lh-heading: 1.15;
+  --lh-body: 1.5;
+  --ls-heading: -0.02em;
+  --ls-label: 0.08em;
+
+  /* — Отступы (шкала 4) — */
+  --sp-1: 4px;  --sp-2: 8px;  --sp-3: 12px; --sp-4: 16px; --sp-5: 20px;
+  --sp-6: 24px; --sp-8: 32px; --sp-10: 40px; --sp-12: 48px; --sp-16: 64px;
+  --sp-20: 80px; --sp-24: 96px; --sp-32: 128px;
+  --section-y: clamp(var(--sp-16), 6vw + var(--sp-6), var(--sp-32));       /* обычная секция */
+  --section-y-low: clamp(var(--sp-8), 3vw + var(--sp-4), var(--sp-16));    /* низкая полоса */
+  --section-y-hero: clamp(var(--sp-16), 8vw + var(--sp-8), 160px);         /* hero */
+  --gutter: clamp(20px, 5vw, 48px);
+  --container: 1120px;
+  --container-narrow: 720px;
+
+  /* — Радиусы, тени — */
+  --r-s: 10px; --r-m: 16px; --r-l: 24px; --r-pill: 999px;
+  --shadow-s: 0 1px 2px rgba(15, 23, 42, .06), 0 4px 12px rgba(15, 23, 42, .06);
+  --shadow-m: 0 8px 24px rgba(15, 23, 42, .10);
+  --shadow-glow: 0 10px 30px rgba(250, 204, 21, .28);
+
+  /* — Движение — */
+  --dur-fast: .18s; --dur: .32s; --dur-slow: .6s;
+  --ease-out: cubic-bezier(.22, 1, .36, 1);
+  --ease-std: cubic-bezier(.4, 0, .2, 1);
+
+  /* — Тёмный hero: свечение (§4) — */
+  --glow: radial-gradient(60% 50% at 70% 30%, rgba(250, 204, 21, .22), transparent 70%);
+
+  color-scheme: light;
+}
+
+/* Тёмный модуль из направления B: только hero EN, карточки-цифры, пост-кейсы.
+   Тело страницы всегда светлое — поэтому класс, а не prefers-color-scheme. */
+.theme-dark {
+  --bg: var(--dark-bg);
+  --bg-card: var(--dark-card);
+  --bg-soft: var(--dark-card);
+  --fg: var(--dark-fg);
+  --muted: var(--dark-muted);
+  --line: var(--dark-card-line);
+  --focus: var(--yellow);
+  --on-accent: var(--ink);
+  color-scheme: dark;
+}
