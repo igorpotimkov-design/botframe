@@ -287,3 +287,63 @@ textarea.field__input { min-height: 120px; resize: vertical; }
 .sg-swatch { display: grid; gap: var(--sp-1); font-size: var(--fs-label); }
 .sg-swatch i { display: block; width: 72px; height: 48px; border-radius: var(--r-s); border: 1px solid var(--line); }
 .sg-dark { background: var(--ink); color: var(--white); padding: var(--sp-6); border-radius: var(--r-l); }
+
+/* 19.11 — карта втрат + другий кейс */
+.leaks { display: grid; gap: var(--sp-4); }
+.leak { display: grid; grid-template-columns: auto 1fr; gap: var(--sp-4); padding: var(--sp-6); background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--r-m); }
+.leak__n { font-family: var(--font-mono); font-size: var(--fs-h3); line-height: 1; padding: var(--sp-2) var(--sp-3); background: var(--yellow); color: var(--ink); border-radius: var(--r-s); align-self: start; }
+.leak__body { display: grid; gap: var(--sp-3); }
+.leak__body h3 { margin: 0; }
+.leak__body p { margin: 0; }
+.leak__k { display: block; margin-bottom: var(--sp-1); font-size: var(--fs-label); letter-spacing: var(--ls-label); text-transform: uppercase; font-weight: 700; color: var(--muted); }
+.leak__fix { font-weight: 600; }
+@media (min-width: 1024px) { .leak__body { grid-template-columns: minmax(0,1.1fr) minmax(0,1.6fr) minmax(0,1.3fr) minmax(0,1.3fr); gap: var(--sp-6); align-items: start; } }
+.case--next { margin-top: var(--sp-16); padding-top: var(--sp-16); border-top: 1px solid var(--line); }
+.case--next .num-card { display: block; } .case--next .num-card__value, .case--next .num-card__label { display: block; }
+
+/* 19.11 — анімації як у Rumo: карта втрат, лінія кроків, «Було → Стало», лічильники */
+.leakmap { position: relative; display: flex; margin-bottom: var(--sp-8); }
+.leakmap__rail { position: absolute; top: 22px; left: 10%; right: 10%; height: 2px; background: var(--line); }
+.leakmap__fill { position: absolute; inset: 0; background: var(--ink); transform: scaleX(0); transform-origin: left; transition: transform 1.2s var(--ease-out); }
+.leakmap.is-on .leakmap__fill { transform: scaleX(1); }
+.leakmap__pt { position: relative; flex: 1 1 0; display: flex; flex-direction: column; align-items: center; gap: var(--sp-2); min-width: 0; padding: 0 var(--sp-1); background: none; border: 0; cursor: pointer; font: inherit; color: var(--muted); }
+.leakmap__n { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: var(--bg-card); border: 2px solid var(--line); font-family: var(--font-mono); font-size: var(--fs-body); color: var(--fg); transition: background var(--dur) var(--ease-out), border-color var(--dur) var(--ease-out), transform var(--dur) var(--ease-out); transition-delay: calc(var(--i) * 0.2s); }
+.leakmap.is-on .leakmap__n { background: var(--yellow); border-color: var(--ink); color: var(--ink); }
+.leakmap__t { font-size: var(--fs-small); font-weight: 600; text-align: center; line-height: 1.25; }
+.leakmap__pt[aria-pressed="true"] { color: var(--fg); }
+.leakmap__pt[aria-pressed="true"] .leakmap__n { transform: scale(1.12); box-shadow: 0 0 0 4px var(--bg), 0 0 0 6px var(--ink); transition-delay: 0s; }
+.leakmap__pt:hover .leakmap__n { transform: scale(1.08); transition-delay: 0s; }
+.leakmap__pt:focus-visible { outline: none; }
+.leakmap__pt:focus-visible .leakmap__n { outline: 3px solid var(--focus); outline-offset: 3px; }
+@media (max-width: 639px) { .leakmap__t { display: none; } }
+.leaks--tabs .leak:not([hidden]) { animation: leakIn 0.35s var(--ease-out); }
+@keyframes leakIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+.yak-grid { display: grid; gap: var(--sp-8); }
+@media (min-width: 1024px) { .yak-grid { grid-template-columns: 5fr 7fr; gap: var(--sp-16); } .yak-grid .section__head { position: sticky; top: var(--sp-24); align-self: start; } }
+.timeline { position: relative; list-style: none; margin: 0; padding: 0 0 0 64px; display: grid; gap: var(--sp-10); }
+.timeline::before, .timeline::after { content: ""; position: absolute; left: 21px; top: 8px; width: 2px; }
+.timeline::before { bottom: 8px; background: var(--line); }
+.timeline::after { height: calc((100% - 16px) * var(--p, 1)); background: var(--ink); }
+.timeline .step { padding-top: 0; }
+.timeline .step__n { left: -64px; min-width: 44px; text-align: center; transition: background var(--dur) var(--ease-out), color var(--dur) var(--ease-out); }
+.timeline--js .step:not(.is-active) .step__n { background: var(--bg-soft); color: var(--muted); box-shadow: inset 0 0 0 2px var(--line); }
+
+.ba { display: grid; gap: var(--sp-3); align-items: stretch; margin: var(--sp-6) 0; }
+.ba__col { padding: var(--sp-4) var(--sp-5); border-radius: var(--r-m); background: var(--bg-card); border: 1px solid var(--line); }
+.ba__col p { margin: 0; }
+.ba__col--after { border: 2px solid var(--ink); }
+.ba__k { display: block; margin-bottom: var(--sp-1); font-size: var(--fs-label); letter-spacing: var(--ls-label); text-transform: uppercase; font-weight: 700; color: var(--muted); }
+.ba__arrow { width: 56px; height: 24px; color: var(--ink); justify-self: center; transform: rotate(90deg); }
+.ba__arrow path { stroke-dasharray: 90; stroke-dashoffset: 90; transition: stroke-dashoffset 0.9s var(--ease-out) 0.3s; }
+.ba.is-visible .ba__arrow path, .no-js .ba__arrow path { stroke-dashoffset: 0; }
+@media (prefers-reduced-motion: reduce) {
+  .leakmap__fill, .leakmap__n, .ba__arrow path { transition: none; }
+  .ba__arrow path { stroke-dashoffset: 0; }
+  .leaks--tabs .leak:not([hidden]) { animation: none; }
+}
+.leaks--tabs .leak[hidden] { display: none; }
+.timeline .step__n { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; z-index: 1; }
+.yak-grid ol.timeline { padding: 0 0 0 64px; }
+.ba { max-width: 460px; }
+.ba__arrow { width: 40px; height: 20px; }

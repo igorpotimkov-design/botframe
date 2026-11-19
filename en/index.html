@@ -31,7 +31,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="../assets/css/tokens.css">
-<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="stylesheet" href="../assets/css/site.css?v=1911g">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -143,6 +143,46 @@
         "@type": "Answer",
         "text": "We do for the first 2 weeks, included in the price. After that, by agreement. The guide shows how to do it yourself."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Why not a website builder?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You do not set anything up yourself. We write the text, connect the form and check that every request reaches your Telegram. You get a finished site, not a tool."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How are you different from a freelancer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We start from a tested base, so launch takes 5 days and you know the price before we begin. Before handover we send 5 test requests and give you a short guide."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the bot hand over to me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unusual or tricky questions, payments and health questions. The bot passes them to you with the whole chat, so the client never repeats themselves. Works in Telegram, Instagram Direct after Meta approval."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to my clients' data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only you and we see the requests. We do not share them with third parties and do not send mailings. Data can be deleted on the data deletion page."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need any tech skills?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. You answer 5 questions and send your price list. After launch you get a short guide: where requests go and how to change the text."
+      }
     }
   ]
 }
@@ -171,7 +211,7 @@
       <span><span class="logo__name">BotFrame</span><span class="logo__sub">STUDIO</span></span>
     </a>
     <nav class="nav" aria-label="Sections">
-      <a href="#poslugy">Services</a><a href="#poslugy">Pricing</a><a href="#keis">Case</a><a href="#yak">How it works</a><a href="#faq">FAQ</a><a href="#kontakty">Contact</a>
+      <a href="#poslugy">Services</a><a href="#poslugy">Pricing</a><a href="#keis">Cases</a><a href="#yak">How it works</a><a href="#faq">FAQ</a><a href="#kontakty">Contact</a>
     </nav>
     <div class="header__actions">
       <div class="lang" aria-label="Language"><a href="../" hreflang="uk" lang="uk">UA</a><span aria-current="page" lang="en">EN</span></div>
@@ -180,7 +220,7 @@
     <details class="menu">
       <summary aria-label="Menu"></summary>
       <div class="menu__panel">
-        <a href="#poslugy">Services</a><a href="#poslugy">Pricing</a><a href="#keis">Case</a><a href="#yak">How it works</a><a href="#faq">FAQ</a><a href="#kontakty">Contact</a>
+        <a href="#poslugy">Services</a><a href="#poslugy">Pricing</a><a href="#keis">Cases</a><a href="#yak">How it works</a><a href="#faq">FAQ</a><a href="#kontakty">Contact</a>
         <div class="lang" aria-label="Language"><a href="../" hreflang="uk" lang="uk">UA</a><span aria-current="page" lang="en">EN</span></div>
       </div>
     </details>
@@ -218,7 +258,7 @@
     <div class="hero__numbers">
       <div class="num-card"><div class="num-card__value">5 days</div><div class="num-card__label">StaticX, brief to launch</div></div>
       <div class="num-card"><div class="num-card__value">5 of 5</div><div class="num-card__label">test bookings delivered to the owner</div></div>
-      <div class="num-card"><div class="num-card__value">2 languages</div><div class="num-card__label">English and Ukrainian on one site</div></div>
+      <div class="num-card"><div class="num-card__value">2 languages</div><div class="num-card__label">English and Russian on the StaticX site</div></div>
     </div>
     <p class="small section__note">We only use the official Telegram and Meta APIs.</p>
   </div>
@@ -227,12 +267,15 @@
 <!-- ===== 3. Pain ===== -->
 <section class="section" id="bolit">
   <div class="container">
-    <div class="section__head"><span class="label">The problem</span><h2>Three situations where a business loses a client</h2></div>
-    <div class="grid grid--3">
-      <article class="card card--pain reveal"><h3>A message at 11 pm, no reply</h3><p>A client writes at night, you answer in the morning, and she has booked somewhere else.</p><p class="card__after">The bot answers right away and offers a free time.</p></article>
-      <article class="card card--pain reveal"><h3>A missed call</h3><p>Your hands are busy and the phone rings. The client does not call back.</p><p class="card__after">Every request from the site or the bot lands in your Telegram.</p></article>
-      <article class="card card--pain reveal"><h3>A client forgets to show up</h3><p>The booking was made, and the slot sits empty.</p><p class="card__after">The bot sends a reminder the day before.</p></article>
-    </div>
+    <div class="section__head"><span class="label">Where clients slip away</span><h2>Where clients slip away while you work</h2><p class="lead">A client goes through 5 steps from finding you to coming back. Check where you lose them.</p></div>
+    <ol class="leaks">
+      <li class="leak reveal"><span class="leak__n">1</span><div class="leak__body"><h3>Searching</h3><p>You are on Instagram but not on Google. They find a competitor's site with a Book button.</p><p><span class="leak__k">Check</span>search Google for your service and city.</p><p class="leak__fix"><span class="leak__k">What helps</span>a website and a Google Maps profile.</p></div></li>
+      <li class="leak reveal"><span class="leak__n">2</span><div class="leak__body"><h3>Writing</h3><p>They message at 11 pm and get a reply in the morning. By then they booked elsewhere.</p><p><span class="leak__k">Check</span>how many messages come in after 8 pm?</p><p class="leak__fix"><span class="leak__k">What helps</span>the bot answers right away, even at night.</p></div></li>
+      <li class="leak reveal"><span class="leak__n">3</span><div class="leak__body"><h3>Asking the price</h3><p>“DM for price” or “it depends”. They ask three places and pick whoever names a number first.</p><p><span class="leak__k">Check</span>is your price on the site or in your bio?</p><p class="leak__fix"><span class="leak__k">What helps</span>a starting price on the site, and the bot quotes your list.</p></div></li>
+      <li class="leak reveal"><span class="leak__n">4</span><div class="leak__body"><h3>Booking</h3><p>Bookings live in chats, a notebook, your head. Times get mixed up, two people for one slot.</p><p><span class="leak__k">Check</span>can you say in a minute who is coming tomorrow?</p><p class="leak__fix"><span class="leak__k">What helps</span>every booking in one table.</p></div></li>
+      <li class="leak reveal"><span class="leak__n">5</span><div class="leak__body"><h3>Showing up</h3><p>They booked and forgot. The slot sits empty.</p><p><span class="leak__k">Check</span>how many people skipped without notice last month?</p><p class="leak__fix"><span class="leak__k">What helps</span>a reminder the day before the visit.</p></div></li>
+    </ol>
+    <p class="section__note">Losses at step 1 are fixed by a website, steps 2 to 5 by a bot. Not sure where yours are? <a href="#zayavka">Write to us and we will look together</a>.</p>
   </div>
 </section>
 
@@ -280,36 +323,53 @@
 <section class="section section--soft" id="keis">
   <div class="container case">
     <div>
-      <span class="label">Case</span>
+      <span class="label">Cases · client</span>
       <h2>A bilingual booking site for a Chicago soccer academy, live in 5 days</h2>
       <div class="case__numbers"><span class="num-card"><span class="num-card__value">5 days</span></span><span class="num-card"><span class="num-card__value">5 of 5</span></span><span class="num-card"><span class="num-card__value">2 languages</span></span></div>
-      <p>StaticX Soccer Academy needed a site where parents book a trial practice. We built it in English and Ukrainian with a booking form. Each request arrives in Telegram and in a table. Domain and Google Search Console are connected, and 5 of 5 test requests came through.</p>
+      <div class="ba reveal"><div class="ba__col"><span class="ba__k">Before</span><p>Parents asked about a trial practice on Instagram and WhatsApp. Bookings got lost in chats.</p></div><svg class="ba__arrow" viewBox="0 0 64 24" aria-hidden="true" focusable="false"><path d="M2 12 H58 M48 3 L60 12 L48 21" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="ba__col ba__col--after"><span class="ba__k">After</span><p>Parents book on the site themselves. Each request comes with a hint and goes straight to the owner and into a table.</p></div></div>
+      <p>StaticX Soccer Academy needed a site where parents book a trial practice themselves instead of asking in chats. We built it in English and Russian with a booking form and Google reviews. Each request comes with a hint for the owner, for example which location to offer for the child's age. Domain and Google Search Console are connected, and 5 of 5 test requests came through.</p>
       <p class="section__note"><a href="https://staticxsocceracademy.com" target="_blank" rel="noopener">staticxsocceracademy.com</a></p>
     </div>
     <figure class="case__shot case__shot--img"><img src="../assets/img/staticx-test-lead.png" width="386" height="172" loading="lazy" alt="Example of a StaticX test request in Telegram"><figcaption>A StaticX test request in the owner’s Telegram</figcaption></figure>
+  </div>
+  <div class="container case case--next">
+    <div>
+      <span class="label">Cases · our own bot</span>
+      <h2>Our studio bot answers clients day and night and logs requests by itself</h2>
+      <div class="case__numbers"><span class="num-card"><span class="num-card__value">10 of 10</span><span class="num-card__label">tests before launch</span></span><span class="num-card"><span class="num-card__value">since 12.11</span><span class="num-card__label">running every day</span></span></div>
+      <div class="ba reveal"><div class="ba__col"><span class="ba__k">Before</span><p>Questions about prices and timing waited until we answered. Requests lived in chats.</p></div><svg class="ba__arrow" viewBox="0 0 64 24" aria-hidden="true" focusable="false"><path d="M2 12 H58 M48 3 L60 12 L48 21" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="ba__col ba__col--after"><span class="ba__k">After</span><p>The bot answers right away from the knowledge base and logs the client and the request in the CRM.</p></div></div>
+      <p>We test everything we sell on our own bot. It answers from the studio knowledge base, remembers the conversation and logs the client and the request in our CRM. Tricky questions go to a person with the whole chat attached.</p>
+    </div>
+    <div class="reveal"><h3>What runs inside</h3><ul class="list-check"><li>Answers only from the knowledge base, no made-up prices</li><li>Remembers the chat, so clients never repeat themselves</li><li>Requests land in the CRM by themselves</li><li>Does not overwrite contacts without confirmation</li><li>Notifies the owner about every new client</li></ul></div>
   </div>
 </section>
 
 <!-- ===== 6. How it works ===== -->
 <section class="section" id="yak">
   <div class="container">
-    <div class="section__head"><span class="label">How it works</span><h2>Three steps from talk to launch</h2></div>
-    <ol class="grid grid--3">
-      <li class="step reveal"><span class="step__n">1</span><h3>Brief</h3><p>A 20-minute talk. You get one price and pay 50% upfront.</p></li>
-      <li class="step reveal"><span class="step__n">2</span><h3>Draft</h3><p>You see a draft in 2 to 3 days. You get 2 rounds of fixes.</p></li>
-      <li class="step reveal"><span class="step__n">3</span><h3>Launch</h3><p>We connect your domain, send 5 test requests and hand you a short guide. After launch, fixes by agreement.</p></li>
+    <div class="yak-grid">
+    <div class="section__head"><span class="label">What happens next</span><h2>What happens after you send a request</h2><p class="lead">No calls at 10 pm and no pressure. Six steps from request to launch.</p></div>
+    <ol class="timeline">
+      <li class="step reveal"><span class="step__n">1</span><h3>A reply within an hour</h3><p>Your request reaches our Telegram right away. We reply 9 am to 9 pm Kyiv time, in the channel you chose. We call only if you ask us to.</p></li>
+      <li class="step reveal"><span class="step__n">2</span><h3>5 questions about your business</h3><p>What you sell, where clients write from, where you lose them. In chat or a 20-minute talk.</p></li>
+      <li class="step reveal"><span class="step__n">3</span><h3>An example for you</h3><p>In 1 to 2 days we show how the site or bot would look for your business.</p></li>
+      <li class="step reveal"><span class="step__n">4</span><h3>One price</h3><p>What is included and how many days. 50% upfront. The decision is yours: if we do not hear back, we remind you once after 3 days.</p></li>
+      <li class="step reveal"><span class="step__n">5</span><h3>Draft</h3><p>You see a draft in 2 to 3 days. You get 2 rounds of fixes.</p></li>
+      <li class="step reveal"><span class="step__n">6</span><h3>Launch</h3><p>We connect your domain, send 5 test requests and hand you a short guide.</p></li>
     </ol>
+    </div>
   </div>
 </section>
 
 <!-- ===== 7. Honest ===== -->
 <section class="section section--line" id="chesno">
   <div class="container">
-    <div class="section__head"><span class="label">Straight talk</span><h2>What the bot does and does not do</h2></div>
+    <div class="section__head"><span class="label">What the bot does</span><h2>What the bot handles and when it calls you</h2></div>
     <div class="grid grid--2">
-      <div class="reveal"><h3>Does</h3><ul class="list-check"><li>Answers questions about prices, address and services from your price list</li><li>Offers free times and books them</li><li>Tells you about every booking right away</li><li>Reminds the client the day before</li><li>Hands hard questions to you</li></ul></div>
-      <div class="reveal"><h3>Does not</h3><ul class="list-cross"><li>Does not invent services or prices that are not in your list</li><li>Does not give medical advice: "I'm not a doctor. I book."</li><li>Does not cancel bookings or take payment by itself</li><li>Does not send ads. The only message it starts is a reminder about the client's own booking</li></ul></div>
+      <div class="reveal"><h3>Handles on its own</h3><ul class="list-check"><li>Answers about prices, address and services, only from your price list</li><li>Offers free times and books them</li><li>Cancels or moves a booking when the client asks</li><li>Tells you about every booking right away</li><li>Reminds the client the day before, never sends ads</li></ul></div>
+      <div class="reveal"><h3>Calls you when</h3><ul class="list-check"><li>A question is unusual or tricky: it hands it to you with the whole chat</li><li>A client wants to pay: you take payment directly, the bot only books</li><li>Someone asks about health: it says "I'm not a doctor. I book." and hands it to you</li></ul></div>
     </div>
+    <p class="section__note">Works in Telegram. Instagram Direct after Meta approval.</p>
   </div>
 </section>
 
@@ -318,25 +378,13 @@
   <div class="container">
     <div class="section__head"><span class="label">Comparison</span><h2>Bot or front-desk person?</h2><p class="lead">A bot does not replace a person. It takes over the repetitive work.</p></div>
     <div class="grid grid--2">
-      <div class="reveal"><h3>A bot is better when you need to</h3><ul class="list-check"><li>Answer at night or on a day off</li><li>Give the price and address from your list</li><li>Offer a free time and book it</li><li>Remind about the visit the day before</li></ul></div>
-      <div class="reveal"><h3>A person is better when you need to</h3><ul class="list-check"><li>Handle an unusual request</li><li>Calm an unhappy client</li><li>Talk face to face and recommend a service</li><li>Take payment or cancel a booking</li></ul></div>
+      <div class="reveal"><h3>A bot is better when you need to</h3><ul class="list-check"><li>Answer at night or on a day off</li><li>Give the price and address from your list</li><li>Offer a free time and book it</li><li>Move or cancel a booking when the client asks</li><li>Remind about the visit the day before</li></ul></div>
+      <div class="reveal"><h3>A person is better when you need to</h3><ul class="list-check"><li>Handle an unusual request</li><li>Calm an unhappy client</li><li>Talk face to face and recommend a service</li><li>Take payment</li></ul></div>
     </div>
     <p class="section__note">Already have someone at the desk? The bot takes their night messages and routine questions. No one at the desk? The bot answers while you are with a client.</p>
   </div>
 </section>
 
-<!-- ===== 7b. Not a fit ===== -->
-<section class="section section--line" id="ne-pidkhodymo">
-  <div class="container">
-    <div class="section__head"><span class="label">Straight talk</span><h2>Who we are not a fit for</h2></div>
-    <div class="grid grid--2">
-      <article class="card card--pain reveal"><h3>1 to 2 bookings a week</h3><p>Everyone writes during the day and you keep up.</p><p class="card__after">A bot is overkill. A phone or a simple site is enough.</p></article>
-      <article class="card card--pain reveal"><h3>Clients only call</h3><p>Almost nobody messages you on Telegram.</p><p class="card__after">A bot does not answer phone calls. A site with a form gives clients another way to book.</p></article>
-      <article class="card card--pain reveal"><h3>They only write on Instagram</h3><p>Our bot works in Telegram right now.</p><p class="card__after">The bot in Instagram Direct comes after Meta approval. Until then, start with a website.</p></article>
-      <article class="card card--pain reveal"><h3>You need payment in the bot</h3><p>The client has to pay before the visit.</p><p class="card__after">The bot does not take payment. You would handle that part yourself.</p></article>
-    </div>
-  </div>
-</section>
 
 <!-- ===== 8. Reviews: not rendered until there is a real review (content/uk.md ## vidguky) ===== -->
 
@@ -353,6 +401,11 @@
       <details class="accordion__item"><summary>I have Instagram. Why a website?</summary><div class="accordion__body"><p>People find a site on Google, and a booking there does not get lost in a chat. Instagram brings people in, the site collects requests. The bot in Direct comes after Meta approval.</p></div></details>
       <details class="accordion__item"><summary>Where do the requests go?</summary><div class="accordion__body"><p>Straight to your Telegram and into a table with every request. It runs on hosting, not on our laptop, so nothing stops when ours is off.</p></div></details>
       <details class="accordion__item"><summary>Who edits the text after launch?</summary><div class="accordion__body"><p>We do for the first 2 weeks, included in the price. After that, by agreement. The guide shows how to do it yourself.</p></div></details>
+      <details class="accordion__item"><summary>Why not a website builder?</summary><div class="accordion__body"><p>You do not set anything up yourself. We write the text, connect the form and check that every request reaches your Telegram. You get a finished site, not a tool.</p></div></details>
+      <details class="accordion__item"><summary>How are you different from a freelancer?</summary><div class="accordion__body"><p>We start from a tested base, so launch takes 5 days and you know the price before we begin. Before handover we send 5 test requests and give you a short guide.</p></div></details>
+      <details class="accordion__item"><summary>What does the bot hand over to me?</summary><div class="accordion__body"><p>Unusual or tricky questions, payments and health questions. The bot passes them to you with the whole chat, so the client never repeats themselves. Works in Telegram, Instagram Direct after Meta approval.</p></div></details>
+      <details class="accordion__item"><summary>What happens to my clients' data?</summary><div class="accordion__body"><p>Only you and we see the requests. We do not share them with third parties and do not send mailings. Data can be deleted on the <a href="../data-deletion.html">data deletion page</a>.</p></div></details>
+      <details class="accordion__item"><summary>Do I need any tech skills?</summary><div class="accordion__body"><p>No. You answer 5 questions and send your price list. After launch you get a short guide: where requests go and how to change the text.</p></div></details>
     </div>
   </div>
 </section>
@@ -371,7 +424,7 @@
       <div class="field field--full"><label class="field__label" for="f-comment">Comment (optional)</label><textarea class="field__input" id="f-comment" name="comment" autocomplete="off"></textarea></div>
       <label class="hp" aria-hidden="true">Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
       <div class="form__actions"><button class="btn btn--primary btn--block" type="submit">Show me how it would look for my business</button></div>
-      <p class="form__note">We reply within an hour, 9 am to 9 pm Kyiv time. By sending the form you agree to the <a href="../privacy.html">privacy policy</a>.</p>
+      <p class="form__note">We reply within an hour, 9 am to 9 pm Kyiv time. No calls unless you ask for one. Only we see your request. By sending the form you agree to the <a href="../privacy.html">privacy policy</a>.</p>
       <noscript><p class="form__note">The form needs JavaScript. Or message us on Telegram <a href="https://t.me/paty_1l" rel="noopener">@paty_1l</a>.</p></noscript>
     </form>
     <div class="form__state form__state--success" id="zayavka-success" role="status" hidden><h3>Request received</h3><p>We will message you on the channel you gave us. Meanwhile, try the demo bot: <a href="https://t.me/barbershopdemotestbot?start=site" rel="noopener">https://t.me/barbershopdemotestbot?start=site</a></p></div>
@@ -414,7 +467,7 @@
 <div class="sticky-cta"><a class="btn btn--primary btn--block" href="#zayavka">Send a request</a></div>
 
 <script src="../assets/js/analytics.js" defer></script>
-<script src="../assets/js/site.js" defer></script>
+<script src="../assets/js/site.js?v=1911g" defer></script>
 <script src="../assets/js/form.js" defer></script>
 </body>
 </html>
