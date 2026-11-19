@@ -51,6 +51,7 @@
     if (href === '#zayavka') track('cta_click', { place: place });
     else if (href.indexOf('t.me/barbershopdemotestbot') !== -1) track('demo_click', { place: place });
     else if (href.indexOf('t.me/paty_1l') !== -1) track('telegram_click', { place: place });
+    else if (href.indexOf('t.me/botframe_studio_bot') !== -1) track('studio_bot_click', { place: place });
     else if (link.hasAttribute('hreflang')) track('lang_switch', { to: link.getAttribute('hreflang') });
   });
 
