@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BotFrame Studio — сайт із записом і бот для бізнесу за 5 днів</title>
-<meta name="description" content="Сайт із записом від 8 000 грн або Telegram-бот, який сам записує клієнтів. Запуск за 5 днів, ціни відкриті. Заявки — вам у Telegram.">
+<title>BotFrame Studio — сайт із записом за 5 днів і помічник для заявок</title>
+<meta name="description" content="Поки ви працюєте, помічник записує клієнтів. Сайт із записом від 8 000 грн за 5 днів після брифу, помічник у Telegram — від 1 200 грн на місяць.">
 <link rel="canonical" href="https://igorpotimkov-design.github.io/botframe/">
 <link rel="alternate" hreflang="uk" href="https://igorpotimkov-design.github.io/botframe/">
 <link rel="alternate" hreflang="en" href="https://igorpotimkov-design.github.io/botframe/en/">
@@ -16,13 +16,13 @@
 <meta property="og:site_name" content="BotFrame Studio">
 <meta property="og:url" content="https://igorpotimkov-design.github.io/botframe/">
 <meta property="og:title" content="BotFrame Studio — менше переписки, більше записів">
-<meta property="og:description" content="Сайт із записом і бот для салону, школи, студії. 5 днів. Ціни відкриті.">
+<meta property="og:description" content="Сайт із записом за 5 днів і помічник у Telegram для салону, школи, студії. Ціни відкриті.">
 <meta property="og:image" content="https://igorpotimkov-design.github.io/botframe/assets/img/og-uk.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="BotFrame Studio — менше переписки, більше записів">
-<meta name="twitter:description" content="Сайт із записом і бот для салону, школи, студії. 5 днів. Ціни відкриті.">
+<meta name="twitter:description" content="Сайт із записом за 5 днів і помічник у Telegram для салону, школи, студії. Ціни відкриті.">
 <meta name="twitter:image" content="https://igorpotimkov-design.github.io/botframe/assets/img/og-uk.png">
 <link rel="icon" href="assets/img/favicon.ico" sizes="16x16 32x32 48x48">
 <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png">
@@ -30,8 +30,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="assets/css/tokens.css">
-<link rel="stylesheet" href="assets/css/site.css?v=1911g">
+<link rel="stylesheet" href="assets/css/site.1cb632c8cb.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -43,10 +42,10 @@
       "url": "https://igorpotimkov-design.github.io/botframe/",
       "image": "https://igorpotimkov-design.github.io/botframe/assets/img/og-uk.png",
       "logo": "https://igorpotimkov-design.github.io/botframe/assets/img/icon-512.png",
-      "description": "Сайт із записом від 8 000 грн або Telegram-бот, який сам записує клієнтів. Запуск за 5 днів, ціни відкриті. Заявки — вам у Telegram.",
+      "description": "Поки ви працюєте, помічник записує клієнтів. Сайт із записом від 8 000 грн за 5 днів після брифу, помічник у Telegram — від 1 200 грн на місяць.",
       "areaServed": ["UA", "US"],
       "availableLanguage": ["uk", "en"],
-      "priceRange": "від 1 800 грн",
+      "priceRange": "від 1 200 грн/міс",
       "sameAs": [
         "https://www.instagram.com/botframe.studio",
         "https://www.youtube.com/@BotFrameLab"
@@ -60,9 +59,15 @@
         },
         {
           "@type": "Offer",
-          "name": "Бот запису",
-          "description": "Telegram-бот: клієнт сам обирає послугу і час, нагадування за день. 1 800 грн і 500 грн на місяць.",
-          "priceSpecification": { "@type": "PriceSpecification", "price": "1800", "priceCurrency": "UAH" }
+          "name": "Помічник Старт",
+          "description": "Усі заявки в одній таблиці, нагадування власнику про заявки без відповіді, нічні відповіді «отримали, вранці відповімо». До 1 500 повідомлень на місяць, ШІ в ціні.",
+          "priceSpecification": { "@type": "UnitPriceSpecification", "price": "1200", "priceCurrency": "UAH", "unitText": "MONTH" }
+        },
+        {
+          "@type": "Offer",
+          "name": "Помічник Про",
+          "description": "Усе зі Старт + ШІ готує відповідь клієнту, власник надсилає її однією кнопкою; запис і нагадування клієнтам. До 5 000 повідомлень на місяць, ШІ в ціні.",
+          "priceSpecification": { "@type": "UnitPriceSpecification", "price": "1800", "priceCurrency": "UAH", "unitText": "MONTH" }
         }
       ]
     },
@@ -87,7 +92,7 @@
       "name": "Скільки це коштує?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Сайт із записом — від 8 000 грн. Бот запису — 1 800 грн і 500 грн на місяць. Ціну одним числом ви отримуєте після брифу. Аванс — 50 %. Токени ШІ оплачуєте окремо, на свій рахунок."
+        "text": "Сайт із записом — від 8 000 грн, аванс 50 %. Помічник Старт — 1 200 грн/міс, Помічник Про — 1 800 грн/міс; підключення 1 500 грн або 0, якщо платите одразу за 3 місяці. ШІ вже в ціні. Ціну сайту одним числом ви отримуєте після брифу."
       }
     },
     {
@@ -95,7 +100,7 @@
       "name": "За скільки запустите?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Сайт — 5 днів після того, як ви відповіли на бриф. Бот — ще +3 дні. Instagram Direct запрацює після дозволу Meta."
+        "text": "Сайт — за 5 днів після того, як ви відповіли на бриф. Помічнику Про потрібно ще 3 дні. Працює в Telegram, Instagram Direct — після дозволу Meta."
       }
     },
     {
@@ -103,7 +108,15 @@
       "name": "А для моєї ніші це підійде?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Якщо у вас салон, школа, студія чи інший сервіс із записом, так. Напишіть, чим займаєтесь, і ми чесно скажемо, чи потрібен вам сайт, бот або нічого з цього."
+        "text": "Якщо у вас салон, школа, студія чи інший сервіс із записом, так. Напишіть, чим займаєтесь, і ми чесно скажемо, чи потрібен вам сайт, помічник або нічого з цього."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Мої клієнти не хочуть говорити з ботом. Що тоді?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Саме тому ми продаємо помічника. Вдень відповідаєте ви: помічник тільки готує текст, а ви надсилаєте його однією кнопкою або правите. Сам він пише клієнту лише вночі, коротко: «Отримали, вранці відповімо»."
       }
     },
     {
@@ -116,10 +129,18 @@
     },
     {
       "@type": "Question",
+      "name": "А якщо не сподобається — повернете аванс?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Так, за етапами. До початку роботи повертаємо 100 %. Після брифу або дизайну — аванс мінус години, які ми вже витратили (400 грн/год). Після здачі макета аванс не повертаємо. Помічник: оплачений місяць не повертаємо, скасування діє з наступного місяця."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Що буде після запуску?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Заявки приходять вам у Telegram і в таблицю. Ви отримуєте пам'ятку: де заявки і як змінити тексти. Правки — 2 тижні після здачі, далі за домовленістю. Бот — 500 грн/міс."
+        "text": "Заявки приходять вам у Telegram і в таблицю. Ви отримуєте пам'ятку: де заявки і як змінити тексти. Правки — 2 тижні після здачі, далі за домовленістю. Помічник — оплата щомісяця наперед, мінімум 3 місяці."
       }
     },
     {
@@ -127,7 +148,7 @@
       "name": "У мене є Instagram. Навіщо сайт?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Сайт знаходять у Google, а запис на ньому не губиться в переписці. Instagram приводить людей, сайт збирає заявки. Бот у Direct запрацює після дозволу Meta."
+        "text": "Сайт знаходять у Google, а запис на ньому не губиться в переписці. Instagram приводить людей, сайт збирає заявки. Помічник у Direct запрацює після дозволу Meta."
       }
     },
     {
@@ -164,10 +185,10 @@
     },
     {
       "@type": "Question",
-      "name": "Що бот передає мені?",
+      "name": "Що помічник передає мені?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Складні й нестандартні питання, оплату і питання про здоров'я. Бот передає їх вам разом з усією розмовою, щоб клієнт не повторював двічі. Працює в Telegram, Instagram Direct — після дозволу Meta."
+        "text": "Складні й нестандартні питання, оплату і питання про здоров'я. Помічник передає їх вам разом з усією розмовою, щоб клієнт не повторював двічі."
       }
     },
     {
@@ -192,9 +213,7 @@
 </head>
 <body class="has-sticky-cta">
 <a class="skip-link" href="#main">Перейти до змісту</a>
-
-<!-- Знак Френка один раз, дальше через <use> -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<svg class="visually-hidden" aria-hidden="true">
   <symbol id="mark" viewBox="0 0 100 100">
     <line x1="50" y1="27" x2="50" y2="13" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
     <circle cx="50" cy="9.5" r="6" fill="currentColor"/>
@@ -204,8 +223,6 @@
     <path d="M38 73 Q50 81 62 73" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
   </symbol>
 </svg>
-
-<!-- ===== Шапка ===== -->
 <header class="header">
   <div class="container header__inner">
     <a class="logo" href="#hero" aria-label="BotFrame Studio — головна">
@@ -213,7 +230,7 @@
       <span><span class="logo__name">BotFrame</span><span class="logo__sub">STUDIO</span></span>
     </a>
     <nav class="nav" aria-label="Розділи">
-      <a href="#poslugy">Послуги</a><a href="#poslugy">Ціни</a><a href="#keis">Кейси</a><a href="#yak">Як працюємо</a><a href="#faq">FAQ</a><a href="#kontakty">Контакти</a>
+      <a href="#roboty">Роботи</a><a href="#poslugy">Ціни</a><a href="#yak">Як працюємо</a><a href="#faq">Питання</a><a href="#kontakty">Контакти</a>
     </nav>
     <div class="header__actions">
       <div class="lang" aria-label="Мова"><span aria-current="page" lang="uk">UA</span><a href="en/" hreflang="en" lang="en">EN</a></div>
@@ -222,32 +239,27 @@
     <details class="menu">
       <summary aria-label="Меню"></summary>
       <div class="menu__panel">
-        <a href="#poslugy">Послуги</a><a href="#poslugy">Ціни</a><a href="#keis">Кейси</a><a href="#yak">Як працюємо</a><a href="#faq">FAQ</a><a href="#kontakty">Контакти</a>
+        <a href="#roboty">Роботи</a><a href="#poslugy">Ціни</a><a href="#yak">Як працюємо</a><a href="#faq">Питання</a><a href="#kontakty">Контакти</a>
         <div class="lang" aria-label="Мова"><span aria-current="page" lang="uk">UA</span><a href="en/" hreflang="en" lang="en">EN</a></div>
       </div>
     </details>
   </div>
 </header>
-
 <main id="main">
-
-<!-- ===== 1. Hero (светлый) ===== -->
 <section class="hero" id="hero">
   <div class="container hero__inner">
     <div class="hero__text">
-      <span class="label">Сайти із записом і боти</span>
-      <h1>Клієнти записуються самі — на сайті чи в боті, поки ви працюєте</h1>
-      <p class="lead">Сайт із записом або Telegram-бот для салону, школи, студії. Запуск за 5 днів, ціни відкриті.</p>
+      <h1>Поки ви працюєте, помічник записує клієнтів</h1>
+      <p class="lead">Сайт із записом — за 5 днів після брифу, від 8 000 грн. Помічник у Telegram збирає всі заявки, вночі відповідає клієнту і нагадує вам, кому ще не відповіли. Від 1 200 грн на місяць.</p>
       <div class="hero__actions">
         <a class="btn btn--primary" href="#zayavka">Показати, як це виглядатиме у вас</a>
-        <a class="btn btn--secondary" href="https://t.me/barbershopdemotestbot?start=site" rel="noopener">Спробувати демо-бота</a>
+        <a class="btn btn--secondary" href="https://t.me/barbershopdemotestbot?start=site">Спробувати демо-бота</a>
       </div>
-      <p class="hero__trust">StaticX, Чикаго: запуск за <span class="num">5 днів</span>. <span class="num">5 із 5</span> тестових заявок дійшли. <span class="num">2 мови</span>.</p>
+      <p class="hero__trust">Останній запуск — сайт StaticX Soccer Academy у Чикаго: 5 днів від брифу до запуску, усі 5 тестових заявок дійшли до власника.</p>
     </div>
     <div class="hero__visual">
-      <!-- Статичный fallback: без класса chat--animate сообщения видны сразу; класс добавляет site.js, если нет prefers-reduced-motion -->
-      <div class="chat" id="hero-chat" role="img" aria-label="Приклад діалогу: клієнт питає вільний час, бот пропонує і записує">
-        <div class="chat__head"><span class="chat__avatar"><svg aria-hidden="true"><use href="#mark"/></svg></span><span>Френк · BotFrame<span class="chat__status">онлайн</span></span></div>
+      <div class="chat" id="hero-chat" role="img" aria-label="Приклад діалогу в демо-боті: клієнт питає вільний час, бот пропонує і записує">
+        <div class="chat__head"><span class="chat__avatar"><svg aria-hidden="true"><use href="#mark"/></svg></span><span>Френк · BotFrame<span class="chat__status">демо-бот</span></span></div>
         <div class="chat__body">
           <div class="chat__msg chat__msg--in">Добрий вечір! Є вільне на четвер увечері?<span class="chat__time">23:12</span></div>
           <div class="chat__msg chat__msg--bot">Є 17:30 і 18:30. Який час вам зручний?<span class="chat__time">23:12</span></div>
@@ -258,41 +270,63 @@
     </div>
   </div>
 </section>
-
-<!-- ===== 2. Полоса доверия ===== -->
-<section class="section section--low" id="dovira" aria-label="Цифри кейсу StaticX">
+<section class="section section--soft" id="roboty">
   <div class="container">
-    <div class="grid grid--3">
-      <div class="num-card"><div class="num-card__value">5 днів</div><div class="num-card__label">сайт StaticX, від брифу до запуску</div></div>
-      <div class="num-card"><div class="num-card__value">5 із 5</div><div class="num-card__label">тестових заявок дійшли до власника</div></div>
-      <div class="num-card"><div class="num-card__value">2 мови</div><div class="num-card__label">англійська і російська на сайті StaticX</div></div>
-    </div>
-    <p class="small section__note">Працюємо тільки через офіційні API Telegram і Meta.</p>
+    <div class="section__head"><h2>Що вже працює</h2><p class="lead">Сайт клієнта в Чикаго і бот, яким користуємося самі. Показуємо тільки те, що відкривається просто зараз.</p></div>
+    <article class="work" id="keis">
+      <figure class="work__shots">
+        <img class="work__desktop" src="assets/img/work-staticx-desktop.jpg" width="1200" height="750" loading="lazy" alt="Розклад груп на сайті StaticX Soccer Academy, комп'ютер">
+        <img class="work__phone" src="assets/img/work-staticx-phone.jpg" width="390" height="844" loading="lazy" alt="Форма запису на пробне тренування на сайті StaticX, телефон">
+      </figure>
+      <div class="work__text">
+        <h3>StaticX Soccer Academy, Чикаго: сайт на 2 мови із записом на пробне тренування</h3>
+        <dl class="facts">
+          <div><dt>5 днів</dt><dd>від брифу до запуску</dd></div>
+          <div><dt>5 із 5</dt><dd>тестових заявок дійшли</dd></div>
+          <div><dt>2 мови</dt><dd>англійська і російська</dd></div>
+        </dl>
+        <p>Раніше батьки питали про пробне тренування в Instagram і WhatsApp, і записи губилися в переписці. Тепер вони записують дитину самі на сайті. Заявка приходить власнику в Telegram з підказкою, яку локацію запропонувати за віком дитини, і лягає в таблицю. Домен і Google Search Console підключені.</p>
+        <p><a class="link-arrow" href="https://staticxsocceracademy.com" target="_blank" rel="noopener">Відкрити staticxsocceracademy.com</a></p>
+      </div>
+    </article>
+    <article class="work work--msc" hidden>
+      <div class="work__text">
+        <h3>МСК «Харків»: сайт безкоштовної футбольної академії</h3>
+        <p>Команди U-15, U-17 і U-19, таблиці ліги і кнопка «Записати дитину» на першому екрані.</p>
+      </div>
+    </article>
+    <article class="work work--bot">
+      <div class="work__text">
+        <h3>Бот студії: на ньому перевіряємо все, що продаємо</h3>
+        <dl class="facts">
+          <div><dt>10 із 10</dt><dd>тестів перед запуском</dd></div>
+          <div><dt>з 12.11</dt><dd>працює щодня</dd></div>
+        </dl>
+        <p>Раніше питання про ціни й терміни чекали, поки ми відповімо, а заявки жили в переписці. Тепер бот відповідає з наших цін і умов, пам'ятає розмову і сам вносить клієнта та заявку в таблицю. Складне питання передає людині разом з усією історією.</p>
+        <p><a class="btn btn--secondary" href="https://t.me/botframe_studio_bot" target="_blank" rel="noopener">Поговорити з ботом</a></p>
+      </div>
+      <div><h4>Що в ньому працює</h4><ul class="list-check"><li>Відповідає тільки з наших цін і умов, нічого не вигадує</li><li>Пам'ять розмови: клієнт не повторює двічі</li><li>Заявка сама лягає в таблицю</li><li>Контакти не перезаписує без підтвердження</li><li>Сповіщення власнику про кожного нового клієнта</li></ul></div>
+    </article>
   </div>
 </section>
-
-<!-- ===== 3. Що болить ===== -->
 <section class="section" id="bolit">
   <div class="container">
-    <div class="section__head"><span class="label">Куди втікають клієнти</span><h2>Куди втікають клієнти, поки ви працюєте</h2><p class="lead">Клієнт проходить 5 кроків від «знайшов вас» до «прийшов знову». Перевірте, на якому з них ви його втрачаєте.</p></div>
+    <div class="section__head"><h2>Куди втікають клієнти, поки ви працюєте</h2><p class="lead">Клієнт проходить 5 кроків від «знайшов вас» до «прийшов знову». Перевірте, на якому з них ви його втрачаєте.</p></div>
     <ol class="leaks">
       <li class="leak reveal"><span class="leak__n">1</span><div class="leak__body"><h3>Шукає</h3><p>Вас немає в Google, тільки в Instagram. Людина бачить сайт конкурента з кнопкою «Записатися».</p><p><span class="leak__k">Перевірте</span>знайдіть себе в Google: ваша послуга і місто.</p><p class="leak__fix"><span class="leak__k">Допомагає</span>сайт і профіль у Google Картах.</p></div></li>
-      <li class="leak reveal"><span class="leak__n">2</span><div class="leak__body"><h3>Пише</h3><p>Написав о 23:00, відповідь зранку. За ніч він записався в іншого.</p><p><span class="leak__k">Перевірте</span>скільки повідомлень приходить вам після 20:00?</p><p class="leak__fix"><span class="leak__k">Допомагає</span>бот відповідає одразу, навіть уночі.</p></div></li>
-      <li class="leak reveal"><span class="leak__n">3</span><div class="leak__body"><h3>Питає ціну</h3><p>«Ціну в директ» або «по-різному». Людина пише трьом, а обирає того, хто перший назвав число.</p><p><span class="leak__k">Перевірте</span>чи є ціна на сайті або в шапці профілю?</p><p class="leak__fix"><span class="leak__k">Допомагає</span>ціна «від» на сайті, бот називає її з вашого прайсу.</p></div></li>
-      <li class="leak reveal"><span class="leak__n">4</span><div class="leak__body"><h3>Записується</h3><p>Запис у переписці, в блокноті, в голові. Плутається час, двоє на одне місце.</p><p><span class="leak__k">Перевірте</span>чи скажете за хвилину, хто у вас завтра?</p><p class="leak__fix"><span class="leak__k">Допомагає</span>усі записи в одній таблиці.</p></div></li>
-      <li class="leak reveal"><span class="leak__n">5</span><div class="leak__body"><h3>Приходить</h3><p>Записався і забув. Місце в графіку порожнє.</p><p><span class="leak__k">Перевірте</span>скільки людей за місяць не прийшло без попередження?</p><p class="leak__fix"><span class="leak__k">Допомагає</span>нагадування за день до візиту.</p></div></li>
+      <li class="leak reveal"><span class="leak__n">2</span><div class="leak__body"><h3>Пише</h3><p>Написав о 23:00, відповідь зранку. За ніч він записався в іншого.</p><p><span class="leak__k">Перевірте</span>скільки повідомлень приходить вам після 20:00?</p><p class="leak__fix"><span class="leak__k">Допомагає</span>помічник уночі одразу пише клієнту «Отримали, вранці відповімо».</p></div></li>
+      <li class="leak reveal"><span class="leak__n">3</span><div class="leak__body"><h3>Питає ціну</h3><p>«Ціну в директ» або «по-різному». Людина пише трьом, а обирає того, хто перший назвав число.</p><p><span class="leak__k">Перевірте</span>чи є ціна на сайті або в шапці профілю?</p><p class="leak__fix"><span class="leak__k">Допомагає</span>ціна «від» на сайті, а помічник готує відповідь з вашого прайсу.</p></div></li>
+      <li class="leak reveal"><span class="leak__n">4</span><div class="leak__body"><h3>Записується</h3><p>Запис у переписці, у блокноті, у голові. Плутається час, двоє на одне місце.</p><p><span class="leak__k">Перевірте</span>чи скажете за хвилину, хто у вас завтра?</p><p class="leak__fix"><span class="leak__k">Допомагає</span>усі заявки й записи в одній таблиці.</p></div></li>
+      <li class="leak reveal"><span class="leak__n">5</span><div class="leak__body"><h3>Приходить</h3><p>Записався і забув. Місце в графіку порожнє.</p><p><span class="leak__k">Перевірте</span>скільки людей за місяць не прийшло без попередження?</p><p class="leak__fix"><span class="leak__k">Допомагає</span>нагадування клієнту за день до візиту.</p></div></li>
     </ol>
-    <p class="section__note">Втрати на першому кроці закриває сайт, на 2–5 кроках — бот. Не знаєте, де саме? <a href="#zayavka">Напишіть, подивимось разом</a>.</p>
+    <p class="section__note">Втрати на першому кроці закриває сайт, на 2–5 кроках — помічник. Не знаєте, де саме? <a href="#zayavka">Напишіть, подивимось разом</a>.</p>
   </div>
 </section>
-
-<!-- ===== 4. Послуги і ціни ===== -->
 <section class="section section--line" id="poslugy">
   <div class="container">
-    <div class="section__head"><span class="label">Послуги і ціни</span><h2>Два продукти з ціною «від»</h2></div>
-    <div class="grid grid--2">
+    <div class="section__head"><h2>Сайт і помічник: ціни відкриті</h2></div>
+    <div class="grid grid--3">
       <article class="card card--accent reveal">
-        <span class="label">Сайт із записом</span>
         <h3>Сайт із записом</h3>
         <p class="card__price">від 8 000 грн</p>
         <p class="small">5 днів після відповідей на бриф</p>
@@ -300,67 +334,72 @@
         <a class="btn btn--primary" href="#zayavka">Хочу сайт</a>
       </article>
       <article class="card reveal">
-        <span class="label">Бот запису</span>
-        <h3>Бот запису</h3>
-        <p class="card__price">1 800 грн + 500 грн/міс</p>
-        <p class="small">+3 дні до запуску</p>
-        <ul class="card__list"><li>Клієнт сам обирає послугу, майстра і час</li><li>Telegram (Instagram — після дозволу Meta)</li><li>Нагадування за день до візиту</li><li>Ви бачите всі записи в таблиці</li><li>Першим — знижка 40 % за відгук</li></ul>
-        <a class="btn btn--secondary" href="#zayavka">Хочу бота</a>
+        <h3>Помічник Старт</h3>
+        <p class="card__price">1 200 грн/міс</p>
+        <p class="small">Підключення 1 500 грн або 0 грн при оплаті за 3 місяці. Мінімум 3 місяці</p>
+        <ul class="card__list"><li>Усі заявки в одній таблиці</li><li>Нагадує вам, якщо клієнт чекає відповіді понад годину</li><li>Уночі пише клієнту: «Отримали, вранці відповімо»</li><li>Telegram (Instagram — після дозволу Meta)</li><li>До 1 500 повідомлень на місяць, ШІ в ціні</li></ul>
+        <a class="btn btn--secondary" href="#zayavka">Хочу Старт</a>
+      </article>
+      <article class="card reveal">
+        <h3>Помічник Про</h3>
+        <p class="card__price">1 800 грн/міс</p>
+        <p class="small">Мінімум 3 місяці</p>
+        <ul class="card__list"><li>Усе зі Старт</li><li>ШІ готує відповідь — ви надсилаєте її однією кнопкою або правите</li><li>Клієнт говорить з вами, а не з ботом</li><li>Запис: послуга, майстер, час</li><li>Нагадування клієнту за день до візиту</li><li>До 5 000 повідомлень на місяць, ШІ в ціні</li></ul>
+        <a class="btn btn--secondary" href="#zayavka">Хочу Про</a>
       </article>
     </div>
-    <p class="small section__note">Система «не втрачаємо клієнтів»: відповідь за хвилину, усі заявки в одній таблиці, ранкове зведення вам. За запитом, 2 тижні. Аванс 50 %. Токени ШІ — на рахунок клієнта.</p>
+    <p class="small section__note">Помічник не відповідає клієнтам замість вас: він збирає заявки, готує відповіді й нагадує. Відповідаєте ви. Сайт — аванс 50 %, помічник — оплата за місяць наперед.</p>
   </div>
 </section>
-
-<!-- ===== 4a. З чого складається ціна ===== -->
 <section class="section" id="tsina">
   <div class="container">
-    <div class="section__head"><span class="label">Ціна</span><h2>З чого складається ціна</h2></div>
+    <div class="section__head"><h2>З чого складається ціна</h2></div>
     <div class="grid grid--2">
       <article class="card reveal"><h3>Що робить дорожче</h3><ul class="card__list"><li>Кілька майстрів або філій</li><li>Більше сторінок і мов на сайті</li><li>Нестандартні сценарії запису</li></ul></article>
       <article class="card reveal"><h3>Що робить дешевше</h3><ul class="card__list"><li>Один майстер і короткий прайс</li><li>Тільки запис і нагадування</li><li>Тексти й фото вже готові</li></ul></article>
       <article class="card reveal"><h3>Чому в інших дорожче</h3><p>Розробка з нуля під один бізнес, більша команда, довший запуск. Це виправдано, коли у вас складні процеси.</p></article>
       <article class="card reveal"><h3>Чому в інших дешевше</h3><p>Готовий конструктор зі своїми обмеженнями. Налаштування і підтримка часто лишаються на вас.</p></article>
     </div>
-    <div class="card card--soft reveal section__note"><h3>Де ми</h3><p>Сайт із записом — від 8 000 грн. Бот запису — 1 800 грн і 500 грн на місяць. Ми беремо готову основу й налаштовуємо її під ваш прайс і графік, тому ви не платите за розробку з нуля. Точну суму називаємо одним числом після брифу. Токени ШІ оплачуєте окремо, на свій рахунок.</p></div>
+    <div class="card card--soft reveal section__note"><h3>Де ми</h3><p>Сайт із записом — від 8 000 грн. Помічник — від 1 200 грн на місяць. Ми беремо готову основу й налаштовуємо її під ваш прайс і графік, тому ви не платите за розробку з нуля. Точну суму називаємо одним числом після брифу. ШІ вже в ціні.</p></div>
   </div>
 </section>
-
-<!-- ===== 5. Кейс StaticX ===== -->
-<section class="section section--soft" id="keis">
-  <div class="container case">
-    <div>
-      <span class="label">Кейси · клієнт</span>
-      <h2>Сайт на 2 мови із записом для футбольної академії в Чикаго — за 5 днів</h2>
-      <div class="case__numbers"><span class="num-card"><span class="num-card__value">5 днів</span></span><span class="num-card"><span class="num-card__value">5 із 5</span></span><span class="num-card"><span class="num-card__value">2 мови</span></span></div>
-      <div class="ba reveal"><div class="ba__col"><span class="ba__k">Було</span><p>Батьки питали про пробне тренування в Instagram і WhatsApp. Записи губились у переписці.</p></div><svg class="ba__arrow" viewBox="0 0 64 24" aria-hidden="true" focusable="false"><path d="M2 12 H58 M48 3 L60 12 L48 21" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="ba__col ba__col--after"><span class="ba__k">Стало</span><p>Батьки записуються самі на сайті. Заявка з підказкою одразу приходить власнику і лягає в таблицю.</p></div></div>
-      <p>StaticX Soccer Academy потрібен був сайт, де батьки самі записують дітей на пробне тренування, а не питають у переписці. Ми зробили сайт на двох мовах із формою запису і відгуками з Google. Заявка приходить з підказкою власнику, наприклад, яку локацію запропонувати за віком дитини. Домен і Google Search Console підключені, з 5 тестових заявок дійшли всі 5.</p>
-      <p class="section__note"><a href="https://staticxsocceracademy.com" target="_blank" rel="noopener">staticxsocceracademy.com</a></p>
+<section class="section section--line" id="chesno">
+  <div class="container">
+    <div class="section__head"><h2>Що помічник робить сам і коли кличе вас</h2></div>
+    <div class="grid grid--2">
+      <div class="reveal"><h3>Робить сам</h3><ul class="list-check"><li>Збирає всі заявки й повідомлення в одну таблицю</li><li>Нагадує вам, якщо клієнт чекає відповіді понад годину</li><li>Уночі пише клієнту: «Отримали, вранці відповімо»</li><li>Готує відповідь з вашого прайсу, а ви надсилаєте її однією кнопкою або правите <span class="tag">Про</span></li><li>Пропонує вільний час, записує, переносить або скасовує запис на прохання клієнта <span class="tag">Про</span></li><li>Нагадує клієнту про візит за день, без реклами <span class="tag">Про</span></li></ul></div>
+      <div class="reveal"><h3>Кличе вас, коли</h3><ul class="list-check"><li>Питання складне чи нестандартне: передає вам разом з усією розмовою</li><li>Клієнт хоче заплатити: оплату ви приймаєте напряму, помічник тільки записує</li><li>Питають про здоров'я: відповідає «Я не лікар. Я записую» і передає вам</li></ul></div>
     </div>
-    <figure class="case__shot case__shot--img"><img src="assets/img/staticx-test-lead.png" width="386" height="172" loading="lazy" alt="Приклад тестової заявки StaticX у Telegram"><figcaption>Тестова заявка StaticX у Telegram власника</figcaption></figure>
-  </div>
-  <div class="container case case--next">
-    <div>
-      <span class="label">Кейси · наш власний бот</span>
-      <h2>Бот студії відповідає клієнтам удень і вночі та сам записує заявки</h2>
-      <div class="case__numbers"><span class="num-card"><span class="num-card__value">10 із 10</span><span class="num-card__label">тестів перед запуском</span></span><span class="num-card"><span class="num-card__value">з 12.11</span><span class="num-card__label">працює щодня</span></span></div>
-      <div class="ba reveal"><div class="ba__col"><span class="ba__k">Було</span><p>Питання про ціни й терміни чекали, поки ми відповімо. Заявки жили в переписці.</p></div><svg class="ba__arrow" viewBox="0 0 64 24" aria-hidden="true" focusable="false"><path d="M2 12 H58 M48 3 L60 12 L48 21" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="ba__col ba__col--after"><span class="ba__k">Стало</span><p>Бот відповідає одразу з бази знань і сам записує клієнта та заявку в CRM.</p></div></div>
-      <p>На нашому боті ми перевіряємо все, що продаємо. Він відповідає з бази знань студії, пам'ятає розмову і сам записує клієнта та заявку в CRM. Складне питання передає людині разом з усією історією.</p>
-      <p><a class="btn btn--secondary" href="https://t.me/botframe_studio_bot" target="_blank" rel="noopener">Поговорити з ботом</a></p>
-    </div>
-    <div class="reveal"><h3>Що в ньому працює</h3><ul class="list-check"><li>Відповіді тільки з бази знань, без вигаданих цін</li><li>Пам'ять розмови: клієнт не повторює двічі</li><li>Заявка сама лягає в CRM</li><li>Контакти не перезаписує без підтвердження</li><li>Сповіщення власнику про кожного нового клієнта</li></ul></div>
+    <p class="section__note">Працює в Telegram, тільки через офіційний API. Instagram Direct — після дозволу Meta.</p>
   </div>
 </section>
-
-<!-- ===== 6. Як працюємо ===== -->
-<section class="section" id="yak">
+<section class="section" id="bot-chy-admin">
+  <div class="container">
+    <div class="section__head"><h2>Помічник чи адміністратор?</h2><p class="lead">Помічник забирає повторювану роботу, а з клієнтом говорите ви або ваш адміністратор.</p></div>
+    <table class="compare">
+      <thead><tr><th scope="col">Що треба зробити</th><th scope="col">Хто впорається краще</th></tr></thead>
+      <tbody>
+        <tr><td>Не загубити повідомлення вночі або у вихідний</td><td>Помічник</td></tr>
+        <tr><td>Назвати ціну й адресу з вашого прайсу</td><td>Помічник готує відповідь, ви надсилаєте</td></tr>
+        <tr><td>Зібрати всі заявки в одну таблицю</td><td>Помічник</td></tr>
+        <tr><td>Нагадати клієнту про візит за день</td><td>Помічник</td></tr>
+        <tr><td>Вирішити нестандартне прохання</td><td>Адміністратор</td></tr>
+        <tr><td>Заспокоїти невдоволеного клієнта</td><td>Адміністратор</td></tr>
+        <tr><td>Поговорити наживо і порадити послугу</td><td>Адміністратор</td></tr>
+        <tr><td>Прийняти оплату</td><td>Адміністратор</td></tr>
+      </tbody>
+    </table>
+    <p class="section__note">Є адміністратор? Помічник забере в нього нічні повідомлення й типові відповіді. Немає? Помічник тримає всі заявки, поки ви з клієнтом.</p>
+  </div>
+</section>
+<section class="section section--line" id="yak">
   <div class="container">
     <div class="yak-grid">
-    <div class="section__head"><span class="label">Що далі</span><h2>Що буде після заявки</h2><p class="lead">Без дзвінків о 22:00 і без нав'язування. Шість кроків від заявки до запуску.</p></div>
+    <div class="section__head"><h2>Що буде після заявки</h2><p class="lead">Без дзвінків о 22:00 і без нав'язування. Шість кроків від заявки до запуску.</p></div>
     <ol class="timeline">
       <li class="step reveal"><span class="step__n">1</span><h3>Відповідь за годину</h3><p>Заявка одразу приходить нам у Telegram. Відповідаємо з 9:00 до 21:00 туди, куди ви вказали. Телефонуємо, тільки якщо ви попросили.</p></li>
       <li class="step reveal"><span class="step__n">2</span><h3>5 питань про бізнес</h3><p>Що продаєте, звідки пишуть клієнти, де їх втрачаєте. Листуванням або 20 хвилин розмови.</p></li>
-      <li class="step reveal"><span class="step__n">3</span><h3>Приклад для вас</h3><p>За 1–2 дні показуємо, як сайт або бот виглядатиме саме у вас.</p></li>
+      <li class="step reveal"><span class="step__n">3</span><h3>Приклад для вас</h3><p>За 1–2 дні показуємо, як сайт або помічник виглядатиме саме у вас.</p></li>
       <li class="step reveal"><span class="step__n">4</span><h3>Ціна одним числом</h3><p>Що входить і за скільки днів. Аванс 50 %. Рішення за вами: якщо мовчите, нагадаємо один раз через 3 дні.</p></li>
       <li class="step reveal"><span class="step__n">5</span><h3>Чернетка</h3><p>За 2–3 дні показуємо чернетку. Є 2 кола правок.</p></li>
       <li class="step reveal"><span class="step__n">6</span><h3>Запуск</h3><p>Підключаємо домен, надсилаємо 5 тестових заявок і віддаємо пам'ятку власнику.</p></li>
@@ -368,57 +407,28 @@
     </div>
   </div>
 </section>
-
-<!-- ===== 7. Чесно ===== -->
-<section class="section section--line" id="chesno">
-  <div class="container">
-    <div class="section__head"><span class="label">Що вміє бот</span><h2>Що бот робить сам і коли кличе вас</h2></div>
-    <div class="grid grid--2">
-      <div class="reveal"><h3>Робить сам</h3><ul class="list-check"><li>Відповідає про ціни, адресу і послуги тільки з вашого прайсу</li><li>Пропонує вільний час і записує</li><li>Скасовує або переносить запис, якщо клієнт попросить</li><li>Одразу повідомляє вас про кожен запис</li><li>Нагадує клієнту про візит за день, без реклами</li></ul></div>
-      <div class="reveal"><h3>Кличе вас, коли</h3><ul class="list-check"><li>Питання складне чи нестандартне: передає вам разом з усією розмовою</li><li>Клієнт хоче заплатити: оплату ви приймаєте напряму, бот тільки записує</li><li>Питають про здоров'я: відповідає «Я не лікар. Я записую» і передає вам</li></ul></div>
-    </div>
-    <p class="section__note">Працює в Telegram. Instagram Direct — після дозволу Meta.</p>
-  </div>
-</section>
-
-<!-- ===== 7a. Бот чи адміністратор ===== -->
-<section class="section" id="bot-chy-admin">
-  <div class="container">
-    <div class="section__head"><span class="label">Порівняння</span><h2>Бот чи адміністратор?</h2><p class="lead">Бот не замінює людину. Він забирає повторювану роботу.</p></div>
-    <div class="grid grid--2">
-      <div class="reveal"><h3>Бот кращий, коли треба</h3><ul class="list-check"><li>Відповісти вночі або у вихідний</li><li>Сказати ціну й адресу з вашого прайсу</li><li>Запропонувати вільний час і записати</li><li>Перенести або скасувати запис на прохання клієнта</li><li>Нагадати про візит за день</li></ul></div>
-      <div class="reveal"><h3>Адміністратор кращий, коли треба</h3><ul class="list-check"><li>Вирішити нестандартне прохання</li><li>Заспокоїти невдоволеного клієнта</li><li>Поговорити наживо і порадити послугу</li><li>Прийняти оплату</li></ul></div>
-    </div>
-    <p class="section__note">Є адміністратор? Бот забере в нього нічні повідомлення й типові питання. Немає? Бот відповідатиме, поки ви з клієнтом.</p>
-  </div>
-</section>
-
-
-<!-- ===== 8. Відгуки — не рендерится, пока нет настоящего отзыва (content/uk.md ## vidguky) ===== -->
-
-<!-- ===== 9. FAQ ===== -->
 <section class="section section--soft" id="faq">
   <div class="container--narrow">
-    <div class="section__head"><span class="label">FAQ</span><h2>Що питають перед замовленням</h2></div>
+    <div class="section__head"><h2>Що питають перед замовленням</h2></div>
     <div class="accordion">
-      <details class="accordion__item" open><summary>Скільки це коштує?</summary><div class="accordion__body"><p>Сайт із записом — від 8 000 грн. Бот запису — 1 800 грн і 500 грн на місяць. Ціну одним числом ви отримуєте після брифу. Аванс — 50 %. Токени ШІ оплачуєте окремо, на свій рахунок.</p></div></details>
-      <details class="accordion__item"><summary>За скільки запустите?</summary><div class="accordion__body"><p>Сайт — 5 днів після того, як ви відповіли на бриф. Бот — ще +3 дні. Instagram Direct запрацює після дозволу Meta.</p></div></details>
-      <details class="accordion__item"><summary>А для моєї ніші це підійде?</summary><div class="accordion__body"><p>Якщо у вас салон, школа, студія чи інший сервіс із записом, так. Напишіть, чим займаєтесь, і ми чесно скажемо, чи потрібен вам сайт, бот або нічого з цього.</p></div></details>
+      <details class="accordion__item" open><summary>Скільки це коштує?</summary><div class="accordion__body"><p>Сайт із записом — від 8 000 грн, аванс 50 %. Помічник Старт — 1 200 грн/міс, Помічник Про — 1 800 грн/міс; підключення 1 500 грн або 0, якщо платите одразу за 3 місяці. ШІ вже в ціні. Ціну сайту одним числом ви отримуєте після брифу.</p></div></details>
+      <details class="accordion__item"><summary>За скільки запустите?</summary><div class="accordion__body"><p>Сайт — за 5 днів після того, як ви відповіли на бриф. Помічнику Про потрібно ще 3 дні. Працює в Telegram, Instagram Direct — після дозволу Meta.</p></div></details>
+      <details class="accordion__item"><summary>А для моєї ніші це підійде?</summary><div class="accordion__body"><p>Якщо у вас салон, школа, студія чи інший сервіс із записом, так. Напишіть, чим займаєтесь, і ми чесно скажемо, чи потрібен вам сайт, помічник або нічого з цього.</p></div></details>
+      <details class="accordion__item"><summary>Мої клієнти не хочуть говорити з ботом. Що тоді?</summary><div class="accordion__body"><p>Саме тому ми продаємо помічника. Вдень відповідаєте ви: помічник тільки готує текст, а ви надсилаєте його однією кнопкою або правите. Сам він пише клієнту лише вночі, коротко: «Отримали, вранці відповімо».</p></div></details>
       <details class="accordion__item"><summary>А якщо не спрацює?</summary><div class="accordion__body"><p>Перед здачею ми надсилаємо 5 тестових заявок з телефона й комп'ютера. Чернетку правимо у 2 кола, після здачі — ще 2 тижні.</p></div></details>
-      <details class="accordion__item"><summary>Що буде після запуску?</summary><div class="accordion__body"><p>Заявки приходять вам у Telegram і в таблицю. Ви отримуєте пам'ятку: де заявки і як змінити тексти. Правки — 2 тижні після здачі, далі за домовленістю. Бот — 500 грн/міс.</p></div></details>
-      <details class="accordion__item"><summary>У мене є Instagram. Навіщо сайт?</summary><div class="accordion__body"><p>Сайт знаходять у Google, а запис на ньому не губиться в переписці. Instagram приводить людей, сайт збирає заявки. Бот у Direct запрацює після дозволу Meta.</p></div></details>
+      <details class="accordion__item"><summary>А якщо не сподобається — повернете аванс?</summary><div class="accordion__body"><p>Так, за етапами. До початку роботи повертаємо 100 %. Після брифу або дизайну — аванс мінус години, які ми вже витратили (400 грн/год). Після здачі макета аванс не повертаємо. Помічник: оплачений місяць не повертаємо, скасування діє з наступного місяця.</p></div></details>
+      <details class="accordion__item"><summary>Що буде після запуску?</summary><div class="accordion__body"><p>Заявки приходять вам у Telegram і в таблицю. Ви отримуєте пам'ятку: де заявки і як змінити тексти. Правки — 2 тижні після здачі, далі за домовленістю. Помічник — оплата щомісяця наперед, мінімум 3 місяці.</p></div></details>
+      <details class="accordion__item"><summary>У мене є Instagram. Навіщо сайт?</summary><div class="accordion__body"><p>Сайт знаходять у Google, а запис на ньому не губиться в переписці. Instagram приводить людей, сайт збирає заявки. Помічник у Direct запрацює після дозволу Meta.</p></div></details>
       <details class="accordion__item"><summary>Куди приходять заявки?</summary><div class="accordion__body"><p>Вам у Telegram одразу і в таблицю з усіма заявками. Усе працює без вашого ноутбука: на хостингу, а не на нашому комп'ютері.</p></div></details>
       <details class="accordion__item"><summary>Хто змінює тексти після здачі?</summary><div class="accordion__body"><p>Перші 2 тижні — ми, у ціні. Далі за домовленістю. Пам'ятка власнику пояснює, як змінити тексти самому.</p></div></details>
       <details class="accordion__item"><summary>Чим ви кращі за конструктор сайтів?</summary><div class="accordion__body"><p>Вам не треба нічого налаштовувати самому. Ми пишемо тексти, підключаємо форму і перевіряємо, що кожна заявка доходить вам у Telegram. Ви отримуєте готовий сайт, а не інструмент.</p></div></details>
       <details class="accordion__item"><summary>Чим ви відрізняєтесь від фрилансера?</summary><div class="accordion__body"><p>Ми беремо готову перевірену основу, тому запуск за 5 днів, а ціну ви знаєте до старту. Перед здачею надсилаємо 5 тестових заявок і віддаємо пам'ятку власнику.</p></div></details>
-      <details class="accordion__item"><summary>Що бот передає мені?</summary><div class="accordion__body"><p>Складні й нестандартні питання, оплату і питання про здоров'я. Бот передає їх вам разом з усією розмовою, щоб клієнт не повторював двічі. Працює в Telegram, Instagram Direct — після дозволу Meta.</p></div></details>
+      <details class="accordion__item"><summary>Що помічник передає мені?</summary><div class="accordion__body"><p>Складні й нестандартні питання, оплату і питання про здоров'я. Помічник передає їх вам разом з усією розмовою, щоб клієнт не повторював двічі.</p></div></details>
       <details class="accordion__item"><summary>Що з даними моїх клієнтів?</summary><div class="accordion__body"><p>Заявки бачите ви і ми. Ми не передаємо їх третім особам і не робимо розсилок. Видалити дані можна на сторінці <a href="data-deletion.html">«Видалення даних»</a>.</p></div></details>
       <details class="accordion__item"><summary>Мені треба щось уміти?</summary><div class="accordion__body"><p>Ні. Ви відповідаєте на 5 питань і даєте прайс. Після запуску отримуєте пам'ятку: де заявки і як змінити тексти.</p></div></details>
     </div>
   </div>
 </section>
-
-<!-- ===== 10. Форма заявки ===== -->
 <section class="section" id="zayavka">
   <div class="container--narrow">
     <div class="section__head"><h2>Покажемо, як це виглядатиме у вас</h2><p class="lead">Напишіть, чим займаєтесь. Ми зробимо приклад для вашого бізнесу.</p></div>
@@ -427,22 +437,19 @@
       <div class="field"><label class="field__label" for="f-contact">Як з вами зв'язатися (Telegram, Instagram або телефон)</label><input class="field__input" id="f-contact" name="contact" type="text" autocomplete="off" placeholder="@нік або номер" required></div>
       <div class="field field--full"><label class="field__label" for="f-biz">Чим займаєтесь</label><input class="field__input" id="f-biz" name="business" type="text" autocomplete="organization" placeholder="Салон, школа, студія…" required></div>
       <div class="field field--full" role="radiogroup" aria-labelledby="f-need-label"><span class="field__label" id="f-need-label">Що потрібно</span>
-        <div class="radios"><label class="radio"><input type="radio" name="need" value="site" checked><span>Сайт</span></label><label class="radio"><input type="radio" name="need" value="bot"><span>Бот</span></label><label class="radio"><input type="radio" name="need" value="unknown"><span>Не знаю</span></label></div>
+        <div class="radios"><label class="radio"><input type="radio" name="need" value="site" checked><span>Сайт</span></label><label class="radio"><input type="radio" name="need" value="bot"><span>Помічник</span></label><label class="radio"><input type="radio" name="need" value="unknown"><span>Не знаю</span></label></div>
       </div>
       <div class="field field--full"><label class="field__label" for="f-comment">Коментар (необов'язково)</label><textarea class="field__input" id="f-comment" name="comment" autocomplete="off"></textarea></div>
       <label class="hp" aria-hidden="true">Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
       <div class="form__actions"><button class="btn btn--primary btn--block" type="submit">Показати, як це виглядатиме у вас</button></div>
       <p class="form__note">Відповідаємо протягом години з 9:00 до 21:00 за Києвом. Без дзвінків, якщо ви їх не просили. Заявку бачимо тільки ми. Надсилаючи форму, ви погоджуєтесь з <a href="privacy.html">політикою конфіденційності</a>.</p>
-      <noscript><p class="form__note">Форма працює з увімкненим JavaScript. Або напишіть нам у Telegram <a href="https://t.me/paty_1l" rel="noopener">@paty_1l</a>.</p></noscript>
+      <noscript><p class="form__note">Форма працює з увімкненим JavaScript. Або напишіть нам у Telegram <a href="https://t.me/paty_1l">@paty_1l</a>.</p></noscript>
     </form>
-    <div class="form__state form__state--success" id="zayavka-success" role="status" hidden><h3>Заявку отримано</h3><p>Напишемо вам у вказаному каналі. А поки спробуйте демо-бота: <a href="https://t.me/barbershopdemotestbot?start=site" rel="noopener">https://t.me/barbershopdemotestbot?start=site</a></p></div>
-    <div class="form__state form__state--error" id="zayavka-error" role="alert" hidden><h3>Заявка не відправилась</h3><p>Спробуйте ще раз або напишіть нам у Telegram <a href="https://t.me/paty_1l" rel="noopener">@paty_1l</a>.</p></div>
+    <div class="form__state form__state--success" id="zayavka-success" role="status" hidden><h3>Заявку отримано</h3><p>Напишемо вам у вказаному каналі. А поки спробуйте демо-бота: <a href="https://t.me/barbershopdemotestbot?start=site">https://t.me/barbershopdemotestbot?start=site</a></p></div>
+    <div class="form__state form__state--error" id="zayavka-error" role="alert" hidden><h3>Заявка не відправилась</h3><p>Спробуйте ще раз або напишіть нам у Telegram <a href="https://t.me/paty_1l">@paty_1l</a>.</p></div>
   </div>
 </section>
-
 </main>
-
-<!-- ===== 11. Подвал / контакты ===== -->
 <footer class="footer" id="kontakty">
   <div class="container">
     <div class="footer__grid">
@@ -453,10 +460,10 @@
       <div>
         <h3>Контакти</h3>
         <ul>
-          <li><a href="https://t.me/paty_1l" rel="noopener">Telegram @paty_1l</a></li>
-          <li><a href="https://www.instagram.com/botframe.studio" rel="noopener">Instagram @botframe.studio</a></li>
-          <li><a href="https://www.facebook.com/people/BotFrame-Studio/61559554077789/" rel="noopener">Facebook «BotFrame Studio»</a></li>
-          <li><a href="https://www.youtube.com/@BotFrameLab" rel="noopener">YouTube @BotFrameLab</a></li>
+          <li><a href="https://t.me/paty_1l">Telegram @paty_1l</a></li>
+          <li><a href="https://www.instagram.com/botframe.studio">Instagram @botframe.studio</a></li>
+          <li><a href="https://www.facebook.com/people/BotFrame-Studio/61559554077789/">Facebook «BotFrame Studio»</a></li>
+          <li><a href="https://www.youtube.com/@BotFrameLab">YouTube @BotFrameLab</a></li>
         </ul>
       </div>
       <div>
@@ -468,14 +475,12 @@
         </ul>
       </div>
     </div>
-    <div class="footer__bottom"><span>© 2026 BotFrame Studio</span><span>Сайти із записом і боти для малого бізнесу</span></div>
+    <div class="footer__bottom"><span>© 2026 BotFrame Studio</span><span>Сайти із записом і помічник для малого бізнесу</span></div>
   </div>
 </footer>
-
 <div class="sticky-cta"><a class="btn btn--primary btn--block" href="#zayavka">Залишити заявку</a></div>
-
-<script src="assets/js/analytics.js?v=1911h" defer></script>
-<script src="assets/js/site.js?v=1911g" defer></script>
-<script src="assets/js/form.js" defer></script>
+<script src="assets/js/analytics.528ff066f3.js" defer></script>
+<script src="assets/js/site.4d7d8dfc94.js" defer></script>
+<script src="assets/js/form.d9f3a00c2b.js" defer></script>
 </body>
 </html>
